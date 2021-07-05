@@ -5,10 +5,7 @@ class EmployeeService {
   async getEmployeeWithDepartments() {
     try {
       let employeesData = await getEmployees();
-      let arr = [];
-      employeesData.forEach((data) => {
-        arr.push(getDepartment(data["dept"]));
-      });
+      let arr = employeesData.map((data) => getDepartment(data["dept"]));
       await Promise.allSettled(arr).then((results) => {
         results.map((data, key) => {
           let { status, value } = data;

@@ -1,8 +1,15 @@
 # Node.js Assignment
 ### Assignment: Backend
 
-You are building the API for a **user and their respective notes**.
 
+You are building the API for a get employees with department.
 
-(Postman will be used for testing APIs, so make the postman collection and add it in the project folder then submit project to git).
+first download : https://github.com/manjeetsingh12/employees.git
 
+install dependency : npm install
+
+To start server : node server.js
+
+Url on postman : http://localhost:3015/getEmployeesDepartments
+
+Method : Get
