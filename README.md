@@ -8,3 +8,5 @@ To start server : node server.js
 Url on postman : http://localhost:3015/getEmployeesDepartments
 
 Method : Get
+
+Please refer unit testing(mocha/chai) : test folder
